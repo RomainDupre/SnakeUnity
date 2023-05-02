@@ -69,6 +69,7 @@ public class Snake : MonoBehaviour
             Grow();
         } else if (other.tag == "Obstacle"){
             ResetState();
-        }   
+        }
+        
     }
 }
