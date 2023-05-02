@@ -11,6 +11,7 @@ public class Snake : MonoBehaviour
     private void Start(){
         _segments = new List<Transform>();
         _segments.Add(this.transform);
+        CreateBaseState();
     }
     private void Update(){
         if(Input.GetKeyDown(KeyCode.Z)){
@@ -32,7 +33,6 @@ public class Snake : MonoBehaviour
         for(int i = _segments.Count - 1; i > 0; i--){
             _segments[i].position = _segments[i-1].position;
         }
-
         this.transform.position = new Vector3(
             Mathf.Round(this.transform.position.x) + _direction.x,
             Mathf.Round(this.transform.position.y) + _direction.y,
@@ -44,12 +44,18 @@ public class Snake : MonoBehaviour
         for (int i = 1; i < _segments.Count; i++){
             Destroy(_segments[i].gameObject);
         }
-
         _segments.Clear();
         _segments.Add(this.transform);
         this.transform.position = Vector3.zero;
+        CreateBaseState();
+    }
 
-        for (int i = 1; )
+    private void CreateBaseState()
+    {
+        for (int i = 1; i < 4; i++)
+        {
+            Grow();
+        }
     }
 
     private void Grow(){
@@ -63,8 +69,6 @@ public class Snake : MonoBehaviour
             Grow();
         } else if (other.tag == "Obstacle"){
             ResetState();
-        }
-        
+        }   
     }
-
 }
