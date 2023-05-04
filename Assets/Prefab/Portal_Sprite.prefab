@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2583509599743612483}
   - component: {fileID: 8539291199675810347}
   m_Layer: 0
-  m_Name: Portal
+  m_Name: Portal_Sprite
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

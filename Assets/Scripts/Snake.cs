@@ -8,22 +8,28 @@ public class Snake : MonoBehaviour
     private List<Transform> _segments;
     public Transform segmentPrefab;
 
+    public bool IsMoving { get; set; }
+
     private void Start(){
+        this.IsMoving = true;
         _segments = new List<Transform>();
         _segments.Add(this.transform);
         CreateBaseState();
     }
     private void Update(){
-        if(Input.GetKeyDown(KeyCode.Z)){
+        if(!IsMoving){
+            return;
+        }
+        if(Input.GetKeyDown(KeyCode.Z) && _direction != Vector2.down){
             _direction = Vector2.up;
         }
-        if(Input.GetKeyDown(KeyCode.Q)){
+        if(Input.GetKeyDown(KeyCode.Q) && _direction != Vector2.right){
             _direction = Vector2.left   ;
         }
-        if(Input.GetKeyDown(KeyCode.S)){
+        if(Input.GetKeyDown(KeyCode.S) && _direction != Vector2.up){
             _direction = Vector2.down;
         }
-        if(Input.GetKeyDown(KeyCode.D)){
+        if(Input.GetKeyDown(KeyCode.D) && _direction != Vector2.left){
             _direction = Vector2.right;
         }
         
@@ -48,6 +54,7 @@ public class Snake : MonoBehaviour
         _segments.Add(this.transform);
         this.transform.position = Vector3.zero;
         CreateBaseState();
+        this.IsMoving = true;
     }
 
     private void CreateBaseState()
