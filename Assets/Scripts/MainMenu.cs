@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     public void PlayGame()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(currentLevel);
 
     }
@@ -32,6 +33,11 @@ public class MainMenu : MonoBehaviour
     public void SelectionnerLevel3()
     {
         this.currentLevel = 3;
+    }
+
+    public void SelectionnerLevel4()
+    {
+        this.currentLevel = 4;
     }
 
 }
