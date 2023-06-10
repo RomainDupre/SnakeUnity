@@ -299,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 468265505}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 12, z: 0}
-  m_LocalScale: {x: 60, y: 1, z: 1}
+  m_LocalScale: {x: 50, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -593,7 +593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 258041776757324424, guid: 637c3a6c0a1b841df86bc824ce40c97d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 258041776757324424, guid: 637c3a6c0a1b841df86bc824ce40c97d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -874,7 +874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718814915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalPosition: {x: 25, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -986,7 +986,7 @@ Transform:
   m_GameObject: {fileID: 1803842864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -12, z: 0}
-  m_LocalScale: {x: 60, y: 1, z: 1}
+  m_LocalScale: {x: 50, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1005,7 +1005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 258041776757324424, guid: 637c3a6c0a1b841df86bc824ce40c97d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 258041776757324424, guid: 637c3a6c0a1b841df86bc824ce40c97d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1249,7 +1249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920210836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 0, z: 0}
+  m_LocalPosition: {x: -25, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
